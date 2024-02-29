@@ -1,0 +1,40 @@
+.field{
+    display: block;
+    position: relative;
+    margin-bottom: 23px;
+    &:first-of-type{
+        margin-bottom: 23px;
+    }
+
+    &__input{
+        width: 100%;
+        border: 1px solid rgba(3, 1, 76, 0.6);
+        border-radius: $borderRadius;
+        padding: 24px 24px 24px 72px;
+        font-family: $ff;
+        font-size: 13.32px;
+        font-weight: 600;
+        color: rgba(3, 1, 76, 1);
+        outline: none;
+        &.is-password{
+            padding-right: 60px;
+        }
+        &::placeholder{
+            color: rgba(3, 1, 76, 0.6);
+        }
+    }
+    &__icon, &__eye{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__eye{
+        right: 38px;
+        cursor: pointer;
+    }
+
+    &__icon{
+        left: 33px;
+    }
+}
